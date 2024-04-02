@@ -10,13 +10,16 @@ body {
     font-weight: 400;
     line-height: 1.4;
 }
+
 .container {
     width: 60vw;
     max-width: 720px;
     min-width: 300px;
     margin: 0 auto;
+    height: 100%;
     padding-bottom: 2em;
 }
+
 form {
     background: rgba(27, 27, 50, 0.8);
     display: flex;
@@ -33,25 +36,29 @@ form {
     border: 0;
     padding: 7% 4% 2% 4%;
 }
+
 .rad {
     padding: 7% 7% 4% 3%;
     width: 23%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
- .rad label {
+
+.rad label {
     display: flex;
     align-items: flex-start;
 
 }
-.rad input[type="radio"]{
+
+.rad input[type="radio"] {
     height: 1.5em;
     width: 50px;
     align-items: center;
     display: flex;
 
 }
-fieldset{
+
+fieldset {
     border: 0;
 }
 
@@ -62,25 +69,33 @@ fieldset{
     border: none;
     display: flex;
 }
-select,option {
-    height: 35px;;
+
+select,
+option {
+    height: 35px;
+    ;
 
 }
+
 .role {
     display: flex;
     flex-direction: column;
     gap: 7px;
-    
+
 }
-.fav label{
+
+.fav label {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .fav {
     padding: 7% 7% 4% 3%;
 }
-#recommand,#role {
+
+#recommand,
+#role {
     display: block;
     width: 100%;
     height: 2.375rem;
@@ -93,17 +108,57 @@ select,option {
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 .outline {
-    padding: 7% 7% 4% 3%;
+    padding: 7% 7% 0 3%;
 }
-.outline label[for="front-end"]{
+
+.outline label[for="front-end"] {
     display: block;
     flex-direction: column;
-    margin-bottom: 0.1em;
+    margin-bottom: 0.001em;
 }
+
 .outline .ok {
     margin-top: 4% !important;
 }
-.outline label input[type="checkbox"]{
+
+.outline label input[type="checkbox"] {
     margin-right: 2%;
-}  
+}
+
+.sugg label {
+    display: flex;
+    flex-direction: column !important;
+    gap: 10px;
+}
+
+.sugg {
+    padding: 3% 7% 4% 3%;
+    width: 86%;
+
+
+}
+
+.sugg textarea {
+    width: 98%;
+    font-family: 'popins', sans-serif;
+    font-weight: 550;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.sugg button {
+    width: 100% !important;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #37af65;
+    border: unset;
+    color: white !important;
+    font-family: 'popins', sans-serif;
+    font-weight: 560;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
