@@ -5,19 +5,19 @@
     <title>Survey</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
+ 
 <body>
     <div class="container">
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form id="survey-form">
             <fieldset class="inline">
-                <label for="name">Name <input id="name" type="text"></label>
-                <label for="email">Email <input id="email" type="email"></label>
-                <label for="age">Age
-                    (optional) <input id="age" type="number" min="13" max="120"></label>
+                <label id="name-label" for="name">Name <input id="name" placeholder="Enter your name" required type="text"></label>
+                <label id="email-label" for="email">Email <input id="email" placeholder="Enter your Email" required type="email"></label>
+                <label id="number-label" for="age">Age
+                    (optional) <input placeholder="Age" id="number" type="number" min="13" max="120"></label>
                 <label class="role">Which option best describes your current role?
-                    <select id="role">
+                    <select id="dropdown">
                         <option value="">Select current role</option>
                         <option value="student">Student</option>
                         <option value="full-time-job">Full time job</option>
@@ -28,9 +28,9 @@
             </fieldset>
             <fieldset class="rad">
                     <label for="definitely">
-                        <input type="radio" name="foo" id="definitely">Definitely</label><br>
-                    <label for="maybe"><input type="radio" name="foo" id="maybe">Maybe</label><br>
-                    <label for="not-sure"> <input type="radio" name="foo" id="not-sure">Not Sure</label>
+                        <input type="radio" value="1" name="foo" id="definitely">Definitely</label><br>
+                    <label for="maybe"><input type="radio" value="1" name="foo" id="maybe">Maybe</label><br>
+                    <label for="not-sure"> <input type="radio" value="1" name="foo" id="not-sure">Not Sure</label>
             </fieldset>
             <fieldset class="fav">
                 <label for="fav">What is your favorite feature of
@@ -44,24 +44,24 @@
             </fieldset>
             <fieldset class="outline">
                 <label for="improved" >What would you like to see improved? (Check all that apply)<br>
-                    <label class="ok" for="front-end"><input type="checkbox">Front-end Projects</label><br>
-                    <label for="front-end"><input type="checkbox">Back-end Projects</label><br>
-                    <label for="front-end"><input type="checkbox">Data Visualization</label><br>
-                    <label for="front-end"><input type="checkbox">Challenges</label><br>
-                    <label for="front-end"><input type="checkbox">Open Source Community</label><br>
-                    <label for="front-end"><input type="checkbox">Gitter help rooms</label><br>
-                    <label for="front-end"><input type="checkbox">Videos</label><br>
-                    <label for="front-end"><input type="checkbox">City Meetups</label><br>
-                    <label for="front-end"><input type="checkbox">Wiki</label><br>
-                    <label for="front-end"><input type="checkbox">Forum</label><br>
-                    <label for="front-end"><input type="checkbox">Additional Courses</label><br>
+                    <label class="ok" for="front-end"><input value="1" type="checkbox">Front-end Projects</label><br>
+                    <label for="front-end"><input value="1" type="checkbox">Back-end Projects</label><br>
+                    <label for="front-end"><input value="1" type="checkbox">Data Visualization</label><br>
+                    <label for="front-end"><input value="1" type="checkbox">Challenges</label><br>
+                    <label for="front-end"><input value="1" type="checkbox">Open Source Community</label><br>
+                    <label for="front-end"><input value="1" type="checkbox">Gitter help rooms</label><br>
+                    <label for="front-end"><input value="1" type="checkbox">Videos</label><br>
+                    <label for="front-end"><input value="1" type="checkbox">City Meetups</label><br>
+                    <label for="front-end"><input value="1" type="checkbox">Wiki</label><br>
+                    <label for="front-end"><input value="1" type="checkbox">Forum</label><br>
+                    <label for="front-end"><input value="1" type="checkbox">Additional Courses</label><br>
                 </label>
             </fieldset class="inline">
             <fieldset class="sugg">
                 <label for="textarea">
                     Any comments or suggestions?<br>
                     <textarea placeholder="Enter your comment here..." name="suggestion" id="suggestion" cols="30" rows="10"></textarea></label><br>
-                    <button type="button">Submit</button>
+                    <button id="submit" type="submit">Submit</button>
                 </fieldset>
             
         </form>

@@ -95,7 +95,7 @@ option {
 }
 
 #recommand,
-#role {
+#dropdown {
     display: block;
     width: 100%;
     height: 2.375rem;
@@ -161,4 +161,7 @@ option {
     font-size: 1.2rem;
     border-radius: 2px;
     cursor: pointer;
+}
+input {
+    padding-left: 10px;
 }
